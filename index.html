@@ -4,29 +4,32 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Roger Hsiao</title>
-  <meta name="description" content="Roger Hsiao — academic researcher." />
+  <meta name="description" content="Roger Hsiao — Graduate Researcher, UC Berkeley." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <nav class="topnav" aria-label="Primary">
+    <ul>
+      <li><a href="assets/Roger_Hsiao_CV.pdf">CV</a></li>
+      <li><a href="https://scholar.google.com/" rel="noopener">Google&nbsp;Scholar</a></li>
+      <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://arxiv.org/a/" rel="noopener">arXiv</a></li>
+    </ul>
+  </nav>
+
   <main class="page">
     <header class="hero">
-      <div class="hero__head">
-        <figure class="hero__portrait">
-          <img src="assets/profile.jpg" alt="Portrait of Roger Hsiao" />
-        </figure>
-        <div class="hero__heading">
-          <h1 class="name">Roger Hsiao</h1>
-          <p class="title">Graduate Researcher</p>
-          <p class="affiliation">UC&nbsp;Berkeley</p>
-        </div>
+      <figure class="hero__portrait">
+        <img src="assets/profile.jpg" alt="Portrait of Roger Hsiao" />
+      </figure>
+      <div class="hero__heading">
+        <h1 class="name">Roger Hsiao</h1>
+        <p class="title">Graduate Researcher</p>
+        <p class="affiliation">UC&nbsp;Berkeley</p>
+        <p class="email">
+          <a href="mailto:roger_hsiao@berkeley.edu">roger_hsiao@berkeley.edu</a>
+        </p>
       </div>
-      <ul class="links" aria-label="Contact and profiles">
-        <li><a href="mailto:roger_hsiao@berkeley.edu">Email</a></li>
-        <li><a href="assets/Roger_Hsiao_CV.pdf">CV</a></li>
-        <li><a href="https://scholar.google.com/" rel="noopener">Scholar</a></li>
-        <li><a href="https://github.com/" rel="noopener">GitHub</a></li>
-        <li><a href="https://arxiv.org/a/" rel="noopener">arXiv</a></li>
-      </ul>
     </header>
 
     <section class="section" id="about" aria-labelledby="about-h">
@@ -39,18 +42,6 @@
           you care about, and one or two notable collaborations or
           prior appointments. Aim for three to five sentences so the
           page stays uncluttered.]
-        </p>
-      </div>
-    </section>
-
-    <section class="section" id="research" aria-labelledby="research-h">
-      <h2 id="research-h" class="section__title">Research</h2>
-      <div class="section__body">
-        <p>
-          My current work centers on scalable optimization for
-          differentiable rendering, with an emphasis on second-order
-          methods that remain practical at the scale of modern scene
-          representations.
         </p>
       </div>
     </section>
@@ -76,9 +67,6 @@
     </section>
 
     <footer class="footer">
-      <p>
-        <a href="mailto:roger_hsiao@berkeley.edu">roger_hsiao@berkeley.edu</a>
-      </p>
       <p class="muted small">Last updated May 2026.</p>
     </footer>
   </main>
