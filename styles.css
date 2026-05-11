@@ -48,35 +48,29 @@ a:hover { color: var(--accent); }
 
 /* ---------- Hero ---------- */
 .hero {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.75rem;
-  align-items: center;
   padding-bottom: 2.5rem;
   border-bottom: 1px solid var(--rule);
 }
 
-@media (min-width: 640px) {
-  .hero {
-    grid-template-columns: 1fr 220px;
-    gap: 2.5rem;
-  }
+.hero__head {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.hero__text { min-width: 0; }
-
-.hero__portrait { margin: 0; }
+.hero__portrait { margin: 0; flex: 0 0 auto; }
 .hero__portrait img {
-  width: 100%;
-  max-width: 240px;
-  aspect-ratio: 4 / 5;
+  width: 140px;
+  height: 175px;
   object-fit: cover;
-  margin-inline: auto;
 }
+
+.hero__heading { min-width: 0; }
 
 .name {
   font-weight: 600;
-  font-size: clamp(2rem, 4.5vw, 2.6rem);
+  font-size: clamp(1.8rem, 4.5vw, 2.4rem);
   line-height: 1.15;
   letter-spacing: -0.01em;
   margin: 0 0 0.3rem;
@@ -89,7 +83,7 @@ a:hover { color: var(--accent); }
 
 .affiliation {
   color: var(--ink-soft);
-  margin: 0 0 1.25rem;
+  margin: 0;
 }
 
 .links {
